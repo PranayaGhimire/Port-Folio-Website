@@ -31,6 +31,11 @@ const Contact = () => {
               <i className="fa-brands fa-x-twitter text-black text-2xl cursor-pointer md:text-3xl hover:text-4xl"></i>
             </a>
           </li>
+          <li>
+            <a href="https://github.com/PranayaGhimire">
+            <i className="fa-brands fa-github text-black text-2xl cursor-pointer md:text-3xl hover:text-4xl"></i>
+            </a>
+          </li>
         </ul>
         <div className="my-75">
           <h3 className="text-center my-2 font-bold md:text-2xl">Phone No.</h3>
