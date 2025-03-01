@@ -21,6 +21,33 @@ const Projects = () => {
               Password Generator using React JS and Tailwind CSS
             </a>
           </li>
+
+          <li className="hover:text-blue-600  active:text-pink-600">
+            <a href="https://weather-app-pranaya-ghimire.netlify.app/">
+              Simple Weather App using React JS and Tailwind CSS
+            </a>
+          </li>
+
+
+          <li className="hover:text-blue-600  active:text-pink-600">
+            <a href="https://todo-list-app-pranaya.netlify.app/">
+              Simple Todo List App using React JS and Tailwind CSS 
+            </a>
+          </li>
+
+          <li className="hover:text-blue-600  active:text-pink-600">
+            <a href="https://currency-converter-pranaya.netlify.app/">
+              Simple Currency Converter App using React JS and Tailwind CSS
+            </a>
+          </li>
+
+          <li className="hover:text-blue-600  active:text-pink-600">
+            <a href="https://form-validation-pranaya.netlify.app/">
+              Simple Form Validation using React JS and Tailwind CSS
+            </a>
+          </li>
+
+
           <li className="hover:text-blue-600  active:text-pink-600">
             <a href="https://transcendent-beignet-4dde5a.netlify.app/">
               Gemini Clone using React JS

@@ -8,6 +8,7 @@ import NotFound from "./components/NotFound";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import DarkModeToggle from "./components/DarkModeToggle";
+import Services from "./components/Services";
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/services" element={<Services/>}></Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />{" "}
         {/* Catch-all route for 404 pages */}

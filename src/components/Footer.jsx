@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import DateTimeDisplay from "./DateTimeDisplay";
 const Footer = () => {
+  
   return (
-    <footer className="bg-green-700 h-45 text-white flex justify-evenly  flex-col md:font-medium">
-      <div className="flex flex-col md:flex-row md:justify-around">
-        <div className="mx-auto my-2 md:mx-0">Pranaya Ghimire</div>
-        <ul className="flex justify-evenly space-x-10">
+    <footer className="bg-green-700 h-55  md:h-45 text-white flex justify-evenly  flex-col md:font-medium">
+      <div className="flex flex-col md:flex-row md:justify-around mx-auto md:mx-0">
+        <div className="mx-auto  md:mx-0">Pranaya Ghimire</div>
+        <ul className="flex  justify-evenly space-x-4 md:space-x-10">
           <li className="hover:text-amber-200">
             <Link to="/">Home</Link>
           </li>
@@ -16,7 +17,10 @@ const Footer = () => {
           <li className="hover:text-amber-200">
             <Link to="/projects">Projects</Link>
           </li>
+
           <li className="hover:text-amber-200">
+          <Link to="/services">Services</Link>
+        </li>          <li className="hover:text-amber-200">
             <Link to="/contact">Contact Me</Link>
           </li>
         </ul>
