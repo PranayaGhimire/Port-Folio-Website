@@ -41,6 +41,10 @@ const Projects = () => {
             </a>
           </li>
 
+          <li className="hover:text-blue-600 active:text-pink-600">
+            <a href="https://calculator-app-pranaya.netlify.app">Simple Calculator App using React JS and Tailwind CSS</a>
+          </li>
+
           <li className="hover:text-blue-600  active:text-pink-600">
             <a href="https://form-validation-pranaya.netlify.app/">
               Simple Form Validation using React JS and Tailwind CSS
@@ -53,6 +57,7 @@ const Projects = () => {
               Gemini Clone using React JS
             </a>
           </li>
+        
         </ul>
       </div>
     </>
