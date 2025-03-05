@@ -8,7 +8,7 @@ const DownloadButton = ({ cv }) => {
       // Create a temporary anchor element
       const link = document.createElement("a");
       link.href = cv;
-      link.download = "Curriculum Vitae.pdf"; // Specify the file name for download
+      link.download = "PranayaResume.pdf"; // Specify the file name for download
       document.body.appendChild(link);
       link.click(); // Trigger the download
       document.body.removeChild(link); // Clean up

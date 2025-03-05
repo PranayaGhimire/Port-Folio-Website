@@ -3,8 +3,9 @@ import mypp from "../assets/mypp.png";
 import DownloadButton from "./DownloadButton";
 import tailwind from "../assets/Tailwind_CSS_Logo.svg";
 import react from "../assets/react.svg";
+import  "./Home.css";
 const Home = () => {
-  const cvUrl = ".././assets/Curriculum Vitae.pdf";
+  const cvUrl = ".././assets/PranayaResume.pdf";
   return (
     <>
       <div className="h-300 my-35 md:h-240">
@@ -52,29 +53,36 @@ const Home = () => {
                 <li>
                   HTML
                   <i className="fa-brands fa-html5 text-amber-600 mx-0.5"></i>
+                  <progress value="90" max="100" className="ml-1"></progress>
                 </li>
                 <li>
                   CSS
                   <i className="fa-brands fa-css3-alt text-purple-600 mx-1"></i>
+                  <progress value="88" max="100" className="ml-1"></progress>
                 </li>
                 <li className="flex items-center justify-center">
                   Tailwind CSS
                   <img src={tailwind} alt="" className="w-5 h-5 mx-1" />
+                  <progress value="80" max="100" className="ml-1"></progress>
                 </li>
                 <li>
                   JavaScript
                   <i className="fa-brands fa-js text-amber-600 mx-1"></i>
+                  <progress value="80" max="100" className="ml-1"></progress>
                 </li>
                 <li className="flex justify-center">
                   React <img src={react} alt="" className="w-5 h-5 mx-1" />
+                  <progress value="70" max="100" className="ml-1"></progress>
                 </li>
                 <li>
                   SQL
                   <i className="fa-solid fa-database text-cyan-600 mx-0.5"></i>
+                  <progress value="65" max="100" className="ml-1"></progress>
                 </li>
                 <li>
                   PHP
                   <i className="fa-brands fa-php bg-purple-500 text-white mx-1"></i>
+                  <progress value="60" max="100" className="ml-1"></progress>
                 </li>
               </ul>
             </div>
