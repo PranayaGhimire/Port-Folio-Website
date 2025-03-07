@@ -12,9 +12,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <ul
-          className={`md:hidden flex  flex-col justify-evenly absolute top-20 right-0 w-35 h-90 bg-green-800 space-y-2 py-4 transition-all duration-1000 ease-in-out ${
-            isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
-          }`}
+          className="md:hidden flex  flex-col justify-evenly absolute top-20 right-0 w-35 h-90 bg-green-800 space-y-2 py-4 transition" 
+          
+          
         >
           <li className="hover:text-gray-300 cursor-pointer text-center">
             <Link to="/">Home</Link>
