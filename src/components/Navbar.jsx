@@ -8,7 +8,7 @@ const Navbar = () => {
   const closeMenu = ()=>setIsOpen(false);
   return (
     <nav className=" fixed top-0 w-full bg-green-700 h-20 text-white flex justify-around items-center  md:flex-row md:items-center md:font-medium">
-      <div className=" md:mx-0">Pranaya's Portfolio</div>
+      <div className=" md:mx-0 text-animated">Pranaya's Portfolio</div>
       <div className="md:hidden">
         <i className={`fa-solid ${isOpen?'fa-xmark text-xl':'fa-bars'}`} onClick={() => setIsOpen(!isOpen)}></i>
       </div>

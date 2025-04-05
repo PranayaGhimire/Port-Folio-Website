@@ -1,0 +1,18 @@
+/* .text-animated{
+    background: url("https://imgs.search.brave.com/Uy3jsvVyxYbBSt7sOkISWzt_d8hT9uX2gcS30nCoV0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb2Ry/b3BzLTFmNjA2Lmt4/Y2RuLmNvbS9jb2Ry/b3BzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE1LzAyL1RleHRG/aWxsX2ltYWdlMTAu/anBnP3gzODA3Ng") no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    animation: moveBg 90s linear infinite;
+    -webkit-animation: moveBg 90s linear infinite;
+}
+
+/* Text Background Animation */
+/* @keyframes moveBg{
+    0%{
+        background-position: 0% 30%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+} */ 
