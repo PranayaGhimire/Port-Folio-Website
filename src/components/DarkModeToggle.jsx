@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import "../App.css";
 const DarkModeToggle = () => {
   // State to track the current mode
