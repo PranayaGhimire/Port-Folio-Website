@@ -4,11 +4,11 @@ import DownloadButton from "./DownloadButton";
 import tailwind from "../assets/Tailwind_CSS_Logo.svg";
 import react from "../assets/react.svg";
 import  "./Home.css";
-const Home = () => {
+const Home = ({isDarkMode}) => {
   const cvUrl = ".././assets/PranayaResume.pdf";
   return (
     <>
-      <div className="h-300 my-35 md:h-240">
+      <div className={` ${isDarkMode?'bg-gradient-to-bl from-zinc-700 to-zinc-900 text-white':'bg-white text-black'} h-350 py-35 md:h-290`}>
         <div className="flex flex-col justify-evenly items-center md:flex-row">
           <p className="text-center">
             I am a passionate Web Developer, Network Administrator And IT

@@ -1,10 +1,9 @@
-import React from "react";
 
-const Contact = () => {
+const Contact = ({isDarkMode}) => {
   return (
     <>
-      <div className="h-150 mx-5 my-35">
-        <h2 className="md:text-center my-5">
+      <div className={` ${isDarkMode?'bg-gradient-to-bl from-zinc-700 to-zinc-900 text-white':'bg-white text-black'} h-190 px-5 py-35`}>
+        <h2 className="text-center my-5">
           You can contact me in any of the links below:
         </h2>
         <h3 className="text-center font-bold md:text-2xl">

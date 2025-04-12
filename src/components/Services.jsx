@@ -11,9 +11,9 @@ import SAD from "../assets/It-Officer-Notes/System Analysis and design.pdf"
 import EC from "../assets/It-Officer-QA/E-commerce Technology.pdf"
 import IT_Nep from "../assets/It-Officer-QA/IT in Nepal.pdf"
 import Mis_Web from "../assets/It-Officer-QA/Mis and Web Engineering.pdf"
-const Services = () => {
+const Services = ({isDarkMode}) => {
   return (
-    <div className='h-150 mx-5 my-35'>
+    <div className={` ${isDarkMode?'bg-gradient-to-bl from-zinc-700 to-zinc-900 text-white':'bg-white text-black'} h-170 px-5 py-35`}>
       <h2 className='font-bold mb-3 text-xl'>Central Public Service Commission ( केन्द्रिय लोकसेवा आयोग )</h2>
       <h2 className='font-bold mb-2'>Computer Officer ( कम्प्युटर अधिकृत ) Notes: </h2>
       <p className='mb-1 font-semibold'>You can download the notes by following the link below</p>

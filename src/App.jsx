@@ -9,18 +9,23 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import DarkModeToggle from "./components/DarkModeToggle";
 import Services from "./components/Services";
+import { useState } from "react";
 function App() {
+  const [isDarkMode,setIsDarkMode] = useState(true);
+  const toggleMode = () => {
+      setIsDarkMode(!isDarkMode);
+  }
   return (
     <Router>
       <Navbar />
-      <DarkModeToggle></DarkModeToggle>
+      <DarkModeToggle onClick={toggleMode} isDarkMode={isDarkMode}></DarkModeToggle>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/projects" element={<Projects />}></Route>
-        <Route path="/services" element={<Services/>}></Route>
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />{" "}
+        <Route path="/" element={<Home isDarkMode={isDarkMode} />}></Route>
+        <Route path="/about" element={<About isDarkMode={isDarkMode} />}></Route>
+        <Route path="/projects" element={<Projects isDarkMode={isDarkMode} />}></Route>
+        <Route path="/services" element={<Services isDarkMode={isDarkMode} />}></Route>
+        <Route path="/contact" element={<Contact isDarkMode={isDarkMode} />} />
+        <Route path="*" element={<NotFound isDarkMode={isDarkMode} />} />{" "}
         {/* Catch-all route for 404 pages */}
       </Routes>
       <Footer />
