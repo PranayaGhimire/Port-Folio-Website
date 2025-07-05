@@ -18,7 +18,8 @@ const Services = ({isDarkMode}) => {
       <h2 className='font-bold mb-2'>Computer Officer ( कम्प्युटर अधिकृत ) Notes: </h2>
       <p className='mb-1 font-semibold'>You can download the notes by following the link below</p>
              
-    <Note CF={CF} DSA={DSA} DBMS={DBMS} MIS_WEB={MIS_WEB} NET={NET} OS={OS} PL={PL} SAD={SAD} EC={EC} IT_Nep={IT_Nep} Mis_Web={Mis_Web }/>
+    <Note 
+    CF={CF} DSA={DSA} DBMS={DBMS} MIS_WEB={MIS_WEB} NET={NET} OS={OS} PL={PL} SAD={SAD} EC={EC} IT_Nep={IT_Nep} Mis_Web={Mis_Web }/>
     </div>
   )
 }

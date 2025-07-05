@@ -18,6 +18,8 @@ const Home = ({isDarkMode}) => {
             className="w-40 h-40 my-5 rounded-full"
             src={mypp}
             alt="Profile Pic"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div className="flex flex-col justify-evenly md:flex-row md:my-10">
@@ -35,6 +37,7 @@ const Home = ({isDarkMode}) => {
               2 months Experience as an internee at Chitrawan Unique Net in
               L1/L2 Network Support Role
             </p>
+            <p className="text-center mt-2">3 months experience as an internee at Void Nepal Pvt. Ltd. in frontend developer role(React JS & Next JS) </p>
           </div>
         </div>
 

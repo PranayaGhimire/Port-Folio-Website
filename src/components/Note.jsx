@@ -1,22 +1,29 @@
-import React from 'react'
 
 const Note = (props) => {
   return (
     
-        <div className='flex flex-col space-y-1'>
-        <a href={props.CF} className='hover:text-amber-400'>Computer Fundamentals</a>
-      <a href={props.DSA} className='hover:text-amber-400'>Data Structures and Algorithms</a>
-      <a href={props.DBMS} className='hover:text-amber-400'>Database Management Systems</a>
-      <a href={props.MIS_WEB} className='hover:text-amber-400'>MIS and Web Engineering</a>
-      <a href={props.NET} className='hover:text-amber-400'>Networking</a>
-      <a href={props.OS} className='hover:text-amber-400'>Operating Systems</a>
-      <a href={props.PL} className='hover:text-amber-400'>Programming Langauage</a>
-      <a href={props.SAD} className='hover:text-amber-400'>System Analysis and Design</a>
-      <a href={props.EC} className='hover:text-amber-400' >E-commerce Technology QA</a>
-            <a href={props.IT_Nep} className='hover:text-amber-400'>IT in Nepal QA</a>
-            <a href={props.Mis_Web} className='hover:text-amber-400'>Mis and Web Engineering QA</a>
+        <ul className='flex flex-col space-y-1'>
+            {[{link:props.CF,item:'Computer Fundamentals'},
+            {link:props.DSA,item:'Data Structures and Algorithms'},
+            {link:props.DBMS,item:'Database Management Systems'},
+            {link:props.MIS_WEB,item:'MIS and Web Engineering'},
+            {link:props.NET,item:'Networking'},
+            {link:props.OS,item:'Operating Systems'},
+            {link:props.PL,item:'Programming Language'},
+            {link:props.SAD,item:'System Analysis and Design'},
+            {link:props.EC,item:'E-commerce Technology QA'},
+            {link:props.IT_Nep,item:'IT in Nepal QA'},
+            {lin:props.Mis_Web,item:'Mis and Web Engineering QA'}]
+            .map((obj,index)=>(
+              <li key={index} >
+                      <a href={obj.link}
+              className='hover:text-amber-400'
+              >{obj.item}</a>
+              </li>
+          
+            ))}
         
-    </div>
+    </ul>
   )
 }
 
