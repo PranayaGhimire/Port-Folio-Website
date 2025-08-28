@@ -2,7 +2,7 @@
 const Note = (props) => {
   return (
     
-        <ul className='flex flex-col space-y-1'>
+        <ul className='flex flex-wrap  gap-8  '>
             {[{link:props.CF,item:'Computer Fundamentals'},
             {link:props.DSA,item:'Data Structures and Algorithms'},
             {link:props.DBMS,item:'Database Management Systems'},
@@ -17,7 +17,7 @@ const Note = (props) => {
             .map((obj,index)=>(
               <li key={index} >
                       <a href={obj.link}
-              className='hover:text-amber-400'
+              className={` hover:bg-teal-500 hover:text-white p-3 rounded-lg ${props.isDarkMode ?"bg-gray-600":"bg-gray-300"} `}
               >{obj.item}</a>
               </li>
           

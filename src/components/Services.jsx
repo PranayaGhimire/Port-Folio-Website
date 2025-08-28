@@ -13,13 +13,14 @@ import IT_Nep from "../assets/It-Officer-QA/IT in Nepal.pdf"
 import Mis_Web from "../assets/It-Officer-QA/Mis and Web Engineering.pdf"
 const Services = ({isDarkMode}) => {
   return (
-    <div className={` ${isDarkMode?'bg-gradient-to-bl from-zinc-700 to-zinc-900 text-white':'bg-white text-black'} h-170 px-5 py-35`}>
+    <div className={` ${isDarkMode?'bg-gradient-to-bl from-zinc-700 to-zinc-900 text-white':'bg-gray-200 text-black'}  px-5 py-35`}>
       <h2 className='font-bold mb-3 text-xl'>Central Public Service Commission ( केन्द्रिय लोकसेवा आयोग )</h2>
       <h2 className='font-bold mb-2'>Computer Officer ( कम्प्युटर अधिकृत ) Notes: </h2>
-      <p className='mb-1 font-semibold'>You can download the notes by following the link below</p>
-             
-    <Note 
-    CF={CF} DSA={DSA} DBMS={DBMS} MIS_WEB={MIS_WEB} NET={NET} OS={OS} PL={PL} SAD={SAD} EC={EC} IT_Nep={IT_Nep} Mis_Web={Mis_Web }/>
+      <p className='mb-1 font-semibold'>You can download the notes by following the link below</p>       
+      <div className={`${isDarkMode ? "bg-gray-500" : "bg-white"} mt-8  p-10 rounded-lg shadow-lg`}>
+          <Note 
+            isDarkMode={isDarkMode} CF={CF} DSA={DSA} DBMS={DBMS} MIS_WEB={MIS_WEB} NET={NET} OS={OS} PL={PL} SAD={SAD} EC={EC} IT_Nep={IT_Nep} Mis_Web={Mis_Web }/>
+      </div>
     </div>
   )
 }

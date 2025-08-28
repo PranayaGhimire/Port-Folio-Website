@@ -8,9 +8,10 @@ const Home = ({isDarkMode}) => {
   const cvUrl = ".././assets/PranayaResume.pdf";
   return (
     <>
-      <div className={` ${isDarkMode?'bg-gradient-to-bl from-zinc-700 to-zinc-900 text-white':'bg-white text-black'} h-370 py-35 md:h-290`}>
-        <div className="flex flex-col justify-evenly items-center md:flex-row">
-          <p className="text-center">
+      <div className={` ${isDarkMode?'bg-gradient-to-bl from-zinc-700 to-zinc-900 text-white':'bg-gray-200 text-black'}  py-35 `}>
+        <div className={`${isDarkMode ? 'bg-gray-500' : 'bg-white'} 
+          flex flex-col justify-evenly items-center md:flex-row m-10 rounded-lg p-5 shadow-lg`}>
+          <p className="text-center text-xl">
             I am a passionate Web Developer, Network Administrator And IT
             Officer
           </p>
@@ -22,14 +23,15 @@ const Home = ({isDarkMode}) => {
             decoding="async"
           />
         </div>
-        <div className="flex flex-col justify-evenly md:flex-row md:my-10">
-          <div>
+        <div className={` ${isDarkMode?"bg-gray-500":"bg-white"}
+           flex flex-col justify-evenly md:flex-row md:my-10 m-10 p-5 rounded-lg shadow-lg`}>
+          <div className="w-full">
             <h2 className=" text-center my-2 font-bold md:text-2xl md:my-5">
               Qualifications:
             </h2>
             <p className="text-center">BSC.CSIT Graduated Student from IOST</p>
           </div>
-          <div>
+          <div className="w-full">
             <h2 className="text-center my-2 font-bold md:text-2xl md:my-5">
               Experiences:
             </h2>
@@ -41,7 +43,8 @@ const Home = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-evenly">
+        <div className={`${isDarkMode ? "bg-gray-500" : "bg-white"} 
+          flex flex-col justify-evenly m-10 p-5 rounded-lg shadow-lg`}>
           <h2 className="md:mx-auto text-center my-2 font-bold md:text-2xl md:my-5">
             Skills:
           </h2>
@@ -108,7 +111,9 @@ const Home = ({isDarkMode}) => {
             </div>
           </div>
         </div>
-        <DownloadButton cv={cvUrl}></DownloadButton>
+        <div className={`${isDarkMode ? "bg-gray-500":"bg-white"} m-10 p-5 rounded-lg shadow-lg`}>
+            <DownloadButton cv={cvUrl}></DownloadButton>
+        </div>
       </div>
     </>
   );

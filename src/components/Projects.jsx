@@ -14,7 +14,7 @@ import DLS_Calculator from "../assets/Project-Card-Images/DLS-Calculator.png";
 const Projects = ({isDarkMode}) => {
   return (
     <>
-      <div className={`${isDarkMode?'bg-gradient-to-bl from-zinc-700 to-zinc-900 text-white':'bg-white text-black'} h-1250  md:h-650 lg:h-650 xl:h-450 2xl:h-350   px-5 flex flex-col items-center justify-center`}>
+      <div className={`${isDarkMode?'bg-gradient-to-bl from-zinc-700 to-zinc-900 text-white':'bg-gray-200 text-black'} h-1250  md:h-650 lg:h-650 xl:h-450 2xl:h-350   px-5 flex flex-col items-center justify-center`}>
         <h2 className="font-bold my-2 text-2xl text-center">Projects:</h2>
         <div className="flex space-x-10 flex-wrap space-y-10 mt-10 ml-5">
         
